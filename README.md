@@ -227,6 +227,11 @@ Create your own Twig layout template (copying and pasting as necessary from the 
 and then set the new template in the user controller:
 
     $app['user.controller']->setLayoutTemplate('mylayout.twig');
+    $app['user.controller']->setEditTemplate('myedit.twig');
+    $app['user.controller']->setListTemplate('mylist.twig');
+    $app['user.controller']->setLoginTemplate('mylogin.twig');
+    $app['user.controller']->registerTemplate('myregister.twig');
+    $app['user.controller']->setViewTemplate('myview.twig');
 
 Access control
 --------------
